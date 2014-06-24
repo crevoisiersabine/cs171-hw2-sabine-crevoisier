@@ -1,6 +1,6 @@
-###For each of the 5 visualizations listed above plus the calendar map, answer the following questions:
+##For each of the 5 visualizations listed above plus the calendar map, answer the following questions:
 
-##Who is the audience and What data have been used ?
+###Who is the audience and What data have been used ?
 
  - The **calendar view** is useful for the user themselves to get an idea of how often they commit to github and get an overview of their activity over the past year across different days of the week. Likewise it can be useful for project managers to understand workloads and perhaps identify periods in the year or in the week that are more or less heavy and plan accordingly. It can also be useful for prospective employers to use this particular type of visualisation to get a quick idea of whether the user is comfortable regularly commiting to github or whether they normally commit everything in bulk at once; and get a sense of how long they have been practised at using git within github. And finally I think the visualisation is also useful generally to visitors to get a sense of the user's proficiency with git and github. The visualisation also shows the longest streak that the user has been active and the current streak.
  
@@ -49,15 +49,15 @@ Open or closed issues: https://api.github.com/repos/:owner/:repo/issues?state=op
 
 I think all the above **views** also cater for curious visitors who had some interest in the project; I don't think the intended audience of any of these visualisations is the general public.
 
-##What happens if suddenly a contributor pushes many commits in a short time interval?
+###What happens if suddenly a contributor pushes many commits in a short time interval?
 
 If suddenly a contributor pushes many commits at once, this will obsure the detail in the rest of the graph. A way to overcome this may be to change the scale to a logarithmic one to dampen this effect. Also it may be possible to have an overview graph that shows the whole timeline, illustrating that there was a period with a large commit at once, but then provide a zooming view where the detail can be explored.
 Another way could be to use a colour scale where the maximum colour is given by the upper quartile, to avoid this outlier obsuring the rest of the datapoints; for example in the calendar plot, dark green would be given for any commits > quartile 3 of the dataset (say that's 50 commits a day) and therefore if a day received 50,000 commits, that point would still show dark green and not dwarf all previous points by forcing them to white. The disadvantage of this is that 50,000 commits would look no different on the colour scale to 50 commits.
 A combination of visualisation would probably be the best way to address this issue.
 
-###Network Graph
+##Network Graph
 
-##What is the role of interaction for this visualization?
+###What is the role of interaction for this visualization?
 
 I think the interaction provides a way to scroll in time and get a record of what the history has been. Also it allows to hover over particular commits to get information about what has been commented. The interaction also provides a way to bring a particular user as the root by clicking on them; that way we can see branches for that particular user. Also clicking on a particular node opens up a new window to show what the commits where.
 
