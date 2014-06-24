@@ -43,11 +43,11 @@ The Github API query is given by: https://api.github.com/repos/:owner/:repo/stat
 
 - The **pulse view** is mostly useful for the contributors I think to keep track of what issues they have opened and what new issues are coming up, which ones have been closed etc... For tracking purposes this may be useful for project managers but probably not so relevant to visitors.
 
-This visualisation uses data for open or closed pull requests: https://api.github.com/repos/:owner/:repo/pulls?state=open (or closed)
+This visualisation uses **data** for open or closed pull requests: https://api.github.com/repos/:owner/:repo/pulls?state=open (or closed)
 Open or closed issues: https://api.github.com/repos/:owner/:repo/issues?state=open (or closed)
 
 
-I think all the above also cater for curious visitors who had some interest in the project; I don't think the intended audience of any of these visualisations is the general public.
+I think all the above **views** also cater for curious visitors who had some interest in the project; I don't think the intended audience of any of these visualisations is the general public.
 
 ##What happens if suddenly a contributor pushes many commits in a short time interval?
 
