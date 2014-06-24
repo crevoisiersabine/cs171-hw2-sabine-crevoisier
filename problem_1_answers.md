@@ -54,3 +54,15 @@ I think all the above **views** also cater for curious visitors who had some int
 If suddenly a contributor pushes many commits at once, this will obsure the detail in the rest of the graph. A way to overcome this may be to change the scale to a logarithmic one to dampen this effect. Also it may be possible to have an overview graph that shows the whole timeline, illustrating that there was a period with a large commit at once, but then provide a zooming view where the detail can be explored.
 Another way could be to use a colour scale where the maximum colour is given by the upper quartile, to avoid this outlier obsuring the rest of the datapoints; for example in the calendar plot, dark green would be given for any commits > quartile 3 of the dataset (say that's 50 commits a day) and therefore if a day received 50,000 commits, that point would still show dark green and not dwarf all previous points by forcing them to white. The disadvantage of this is that 50,000 commits would look no different on the colour scale to 50 commits.
 A combination of visualisation would probably be the best way to address this issue.
+
+###Network Graph
+
+##What is the role of interaction for this visualization?
+
+I think the interaction provides a way to scroll in time and get a record of what the history has been. Also it allows to hover over particular commits to get information about what has been commented. The interaction also provides a way to bring a particular user as the root by clicking on them; that way we can see branches for that particular user. Also clicking on a particular node opens up a new window to show what the commits where.
+
+A static version would not provide a way to easily show and hide the commit comments and therefore either we wouldn't get this information or the graph would become very cluttered; therefore it is probably better with interaction. However the interaction isn't used very much and it isn't that obvious at first what you can click nor that intuitive what the result would be.
+
+##What happens if many new developers suddenly join the project and push commits for the first time? How would you preserve the graph's readability in such a situation?
+
+If many new developers joined the project and pushed new commits, they would be given new rows and that would help keep their branches separate and keep readability. However as the graph currently stands, once a person has made even one commit and has a branch, their row remains open and there are a lot of rows to scroll through, making it quite unreadable; perhaps there should be a way of collapsing the rows of people that hadn't got a branch showing in the current timescale that we were viewing to help with the readability, particularly when a project has many contributors ?
