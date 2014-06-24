@@ -63,6 +63,6 @@ I think the interaction provides a way to scroll in time and get a record of wha
 
 A static version would not provide a way to easily show and hide the commit comments and therefore either we wouldn't get this information or the graph would become very cluttered; therefore it is probably better with interaction. However the interaction isn't used very much and it isn't that obvious at first what you can click nor that intuitive what the result would be.
 
-##What happens if many new developers suddenly join the project and push commits for the first time? How would you preserve the graph's readability in such a situation?
+###What happens if many new developers suddenly join the project and push commits for the first time? How would you preserve the graph's readability in such a situation?
 
 If many new developers joined the project and pushed new commits, they would be given new rows and that would help keep their branches separate and keep readability. However as the graph currently stands, once a person has made even one commit and has a branch, their row remains open and there are a lot of rows to scroll through, making it quite unreadable; perhaps there should be a way of collapsing the rows of people that hadn't got a branch showing in the current timescale that we were viewing to help with the readability, particularly when a project has many contributors ?
