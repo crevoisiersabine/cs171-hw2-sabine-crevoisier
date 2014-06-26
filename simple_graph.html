@@ -85,8 +85,8 @@
    force.stop();
  
    graph.nodes.forEach(function(d, i) {
-     d.x = width/4  2*width*Math.random()/4;
-     d.y = height/4  2*height*Math.random()/4;
+     d.x = width/4 + 2*width*Math.random()/4;
+     d.y = height/4 + 2*height*Math.random()/4;
    })
    
    graph_update(500);
@@ -115,7 +115,7 @@
    force.stop();
  
    graph.nodes.forEach(function(d, i) {
-     d.y = height/2  d.cat*20;
+     d.y = height/2 + d.cat*20;
    })
  
    graph_update(500);
@@ -137,8 +137,8 @@
    graph.nodes = pie(graph.nodes).map(function(d, i) {
      d.innerRadius = 0;
      d.outerRadius = r;
-     d.data.x = arc.centroid(d)[0]height/2;
-     d.data.y = arc.centroid(d)[1]width/2;
+     d.data.x = arc.centroid(d)[0]+height/2;
+     d.data.y = arc.centroid(d)[1]+width/2;
      d.data.endAngle = d.endAngle; 
      d.data.startAngle = d.startAngle; 
      return d.data;
@@ -165,7 +165,7 @@
  
    node.transition().duration(delay)
        .attr("transform", function(d) { 
-         return "translate("d.x","d.y")"; 
+         return "translate("+d.x+","+d.y+")"; 
        });
  }
  
@@ -201,6 +201,14 @@
      .attr("r", 5)
  
  force_layout();
+
+ //Testing
+ d3.json("branch.json", function(error, treeData) {
+  root = treeData[0];
+  update(root);
+ });
+
+ d3.selectAll("div").data.enter().data(root);
  
  </script>
  </body>
