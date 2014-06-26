@@ -201,14 +201,6 @@
      .attr("r", 5)
  
  force_layout();
-
- //Testing
- d3.json("branch.json", function(error, treeData) {
-  root = treeData[0];
-  update(root);
- });
-
- d3.selectAll("div").data.enter().data(root);
  
  </script>
  </body>
