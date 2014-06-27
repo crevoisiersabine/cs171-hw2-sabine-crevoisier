@@ -1,0 +1,1531 @@
+[
+  {
+    "sha": "022647ff9bf16d8a9088f322694ce5e633969650",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-08T02:50:55Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-08T02:50:55Z"
+      },
+      "message": "Merge branch 'master' into moocReport/TeachThought",
+      "tree": {
+        "sha": "2caf06bf9a16a68a3a8cd01c228a8ba79252df70",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/2caf06bf9a16a68a3a8cd01c228a8ba79252df70"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/022647ff9bf16d8a9088f322694ce5e633969650",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/022647ff9bf16d8a9088f322694ce5e633969650",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/022647ff9bf16d8a9088f322694ce5e633969650",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/022647ff9bf16d8a9088f322694ce5e633969650/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e"
+      },
+      {
+        "sha": "ed3cf487ae8d83b20ba14d4655f9587b67c65660",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/ed3cf487ae8d83b20ba14d4655f9587b67c65660",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/ed3cf487ae8d83b20ba14d4655f9587b67c65660"
+      }
+    ]
+  },
+  {
+    "sha": "ed3cf487ae8d83b20ba14d4655f9587b67c65660",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-08T02:03:38Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-08T02:03:38Z"
+      },
+      "message": "Added buttons for admin on course pages",
+      "tree": {
+        "sha": "c3ccd7ae5afb4bc1df47eb52a378bdd1d5992ba4",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/c3ccd7ae5afb4bc1df47eb52a378bdd1d5992ba4"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/ed3cf487ae8d83b20ba14d4655f9587b67c65660",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/ed3cf487ae8d83b20ba14d4655f9587b67c65660",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/ed3cf487ae8d83b20ba14d4655f9587b67c65660",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/ed3cf487ae8d83b20ba14d4655f9587b67c65660/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e8827559c63c115703201164e5f6c61c9e132076",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e8827559c63c115703201164e5f6c61c9e132076",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/e8827559c63c115703201164e5f6c61c9e132076"
+      }
+    ]
+  },
+  {
+    "sha": "e8827559c63c115703201164e5f6c61c9e132076",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-05T16:12:40Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-05T16:12:40Z"
+      },
+      "message": "Added the programming newsletter for March 2014 and add a column for rating for the Reddit course report",
+      "tree": {
+        "sha": "1b2db42a2b0656bec75e8fa37e934a7c265e4d3a",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/1b2db42a2b0656bec75e8fa37e934a7c265e4d3a"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/e8827559c63c115703201164e5f6c61c9e132076",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e8827559c63c115703201164e5f6c61c9e132076",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/e8827559c63c115703201164e5f6c61c9e132076",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e8827559c63c115703201164e5f6c61c9e132076/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e5b1c1eefc92681de847da00ccec525e006331f4",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e5b1c1eefc92681de847da00ccec525e006331f4",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/e5b1c1eefc92681de847da00ccec525e006331f4"
+      }
+    ]
+  },
+  {
+    "sha": "e5b1c1eefc92681de847da00ccec525e006331f4",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-04T07:48:18Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-04T07:48:18Z"
+      },
+      "message": "Added the newsletter for March 2014.",
+      "tree": {
+        "sha": "38a7832044061c3ff28be6599730a2b3a382d9be",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/38a7832044061c3ff28be6599730a2b3a382d9be"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/e5b1c1eefc92681de847da00ccec525e006331f4",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e5b1c1eefc92681de847da00ccec525e006331f4",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/e5b1c1eefc92681de847da00ccec525e006331f4",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e5b1c1eefc92681de847da00ccec525e006331f4/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101"
+      }
+    ]
+  },
+  {
+    "sha": "16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-01T09:04:08Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-01T09:04:08Z"
+      },
+      "message": "Added a way for admins to create multiple reviews",
+      "tree": {
+        "sha": "68fe24813a20d1d2634fd868e845593005f64ad8",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/68fe24813a20d1d2634fd868e845593005f64ad8"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/16cc9db22c903cc56a8ec8f3029a2dd8b7c5e101/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cf4450e3bd251f193a625e7dbe9abae9390f7084",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/cf4450e3bd251f193a625e7dbe9abae9390f7084",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/cf4450e3bd251f193a625e7dbe9abae9390f7084"
+      }
+    ]
+  },
+  {
+    "sha": "cf4450e3bd251f193a625e7dbe9abae9390f7084",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-01T08:00:09Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-03-01T08:00:09Z"
+      },
+      "message": "Added a way to add external reviews",
+      "tree": {
+        "sha": "a5bc13ae8089ecdef54254806f1c3e65dc1ec2a3",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/a5bc13ae8089ecdef54254806f1c3e65dc1ec2a3"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/cf4450e3bd251f193a625e7dbe9abae9390f7084",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/cf4450e3bd251f193a625e7dbe9abae9390f7084",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/cf4450e3bd251f193a625e7dbe9abae9390f7084",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/cf4450e3bd251f193a625e7dbe9abae9390f7084/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3d7e19850c9d768a325175742bad97c8f01986dd",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/3d7e19850c9d768a325175742bad97c8f01986dd",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/3d7e19850c9d768a325175742bad97c8f01986dd"
+      }
+    ]
+  },
+  {
+    "sha": "3d7e19850c9d768a325175742bad97c8f01986dd",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-26T23:25:33Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-26T23:25:33Z"
+      },
+      "message": "On the course page, number of reviews is linked and jumps directly to the reviews",
+      "tree": {
+        "sha": "2a14634f357c7bb62341b41459dfa8eb0831152c",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/2a14634f357c7bb62341b41459dfa8eb0831152c"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/3d7e19850c9d768a325175742bad97c8f01986dd",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/3d7e19850c9d768a325175742bad97c8f01986dd",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/3d7e19850c9d768a325175742bad97c8f01986dd",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/3d7e19850c9d768a325175742bad97c8f01986dd/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae"
+      }
+    ]
+  },
+  {
+    "sha": "d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-26T23:21:21Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-26T23:21:21Z"
+      },
+      "message": "Fixed a broken test due to \"name already in user\" error",
+      "tree": {
+        "sha": "8241593d49e69d6568aebb47cb0513ef147dcfe4",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/8241593d49e69d6568aebb47cb0513ef147dcfe4"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d2bf4d7ae713b21733e8ffec9d337abbbc9f72ae/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d86e25b2e21d43df6e20cc030ed0a25cb3973f55",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d86e25b2e21d43df6e20cc030ed0a25cb3973f55",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/d86e25b2e21d43df6e20cc030ed0a25cb3973f55"
+      }
+    ]
+  },
+  {
+    "sha": "d86e25b2e21d43df6e20cc030ed0a25cb3973f55",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-26T23:03:15Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-26T23:03:15Z"
+      },
+      "message": "Added a ratings column to the courses table",
+      "tree": {
+        "sha": "b68bf8917fbf4f841501bbd217c0c2b887ad9a2d",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/b68bf8917fbf4f841501bbd217c0c2b887ad9a2d"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/d86e25b2e21d43df6e20cc030ed0a25cb3973f55",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d86e25b2e21d43df6e20cc030ed0a25cb3973f55",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/d86e25b2e21d43df6e20cc030ed0a25cb3973f55",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d86e25b2e21d43df6e20cc030ed0a25cb3973f55/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7fa6a40295eefb0789ad1b814ed209ee882eab20",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/7fa6a40295eefb0789ad1b814ed209ee882eab20",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/7fa6a40295eefb0789ad1b814ed209ee882eab20"
+      }
+    ]
+  },
+  {
+    "sha": "7fa6a40295eefb0789ad1b814ed209ee882eab20",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-25T03:17:08Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-25T03:28:51Z"
+      },
+      "message": "Showing recommendations on each course page",
+      "tree": {
+        "sha": "94e0ea444bad31b174ba6773be4b042ce22f3861",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/94e0ea444bad31b174ba6773be4b042ce22f3861"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/7fa6a40295eefb0789ad1b814ed209ee882eab20",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/7fa6a40295eefb0789ad1b814ed209ee882eab20",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/7fa6a40295eefb0789ad1b814ed209ee882eab20",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/7fa6a40295eefb0789ad1b814ed209ee882eab20/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "34c486d4aedaf2bf1516213a9693919f40f865ae",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/34c486d4aedaf2bf1516213a9693919f40f865ae",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/34c486d4aedaf2bf1516213a9693919f40f865ae"
+      }
+    ]
+  },
+  {
+    "sha": "34c486d4aedaf2bf1516213a9693919f40f865ae",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-25T01:09:12Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-25T01:09:12Z"
+      },
+      "message": "Created a command to save the course recommendations into the database",
+      "tree": {
+        "sha": "1dd93590639d6169f51dc427114c7fdbbc88ac68",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/1dd93590639d6169f51dc427114c7fdbbc88ac68"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/34c486d4aedaf2bf1516213a9693919f40f865ae",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/34c486d4aedaf2bf1516213a9693919f40f865ae",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/34c486d4aedaf2bf1516213a9693919f40f865ae",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/34c486d4aedaf2bf1516213a9693919f40f865ae/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8844bc25cc62b7f514441bd7105c0637f2084c28",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/8844bc25cc62b7f514441bd7105c0637f2084c28",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/8844bc25cc62b7f514441bd7105c0637f2084c28"
+      }
+    ]
+  },
+  {
+    "sha": "8844bc25cc62b7f514441bd7105c0637f2084c28",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-25T00:03:08Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-25T00:03:08Z"
+      },
+      "message": "Created a table to store course recommendations",
+      "tree": {
+        "sha": "154e744feb455236f519b724bbf4a6fe11d48923",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/154e744feb455236f519b724bbf4a6fe11d48923"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/8844bc25cc62b7f514441bd7105c0637f2084c28",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/8844bc25cc62b7f514441bd7105c0637f2084c28",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/8844bc25cc62b7f514441bd7105c0637f2084c28",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/8844bc25cc62b7f514441bd7105c0637f2084c28/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1e3ca794b353e00463c2bb249e85e7688cce0a37",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/1e3ca794b353e00463c2bb249e85e7688cce0a37",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/1e3ca794b353e00463c2bb249e85e7688cce0a37"
+      }
+    ]
+  },
+  {
+    "sha": "1e3ca794b353e00463c2bb249e85e7688cce0a37",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-24T03:30:49Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-24T03:30:49Z"
+      },
+      "message": "Cleaned up sessions which have viewed more than 120 courses while generating the dump",
+      "tree": {
+        "sha": "bfc13588690435b63d6e8a34c9a05be0a1652c94",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/bfc13588690435b63d6e8a34c9a05be0a1652c94"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/1e3ca794b353e00463c2bb249e85e7688cce0a37",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/1e3ca794b353e00463c2bb249e85e7688cce0a37",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/1e3ca794b353e00463c2bb249e85e7688cce0a37",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/1e3ca794b353e00463c2bb249e85e7688cce0a37/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "54271275f720c776a61d7b7ca97adab5d18ee8f6",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/54271275f720c776a61d7b7ca97adab5d18ee8f6",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/54271275f720c776a61d7b7ca97adab5d18ee8f6"
+      }
+    ]
+  },
+  {
+    "sha": "54271275f720c776a61d7b7ca97adab5d18ee8f6",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-22T03:54:01Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-22T03:54:01Z"
+      },
+      "message": "Improved the messaging on \"My Courses\" notification to encourage user to review the course",
+      "tree": {
+        "sha": "a09e27bf3e6f77767f5af091c091fca72cf0edba",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/a09e27bf3e6f77767f5af091c091fca72cf0edba"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/54271275f720c776a61d7b7ca97adab5d18ee8f6",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/54271275f720c776a61d7b7ca97adab5d18ee8f6",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/54271275f720c776a61d7b7ca97adab5d18ee8f6",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/54271275f720c776a61d7b7ca97adab5d18ee8f6/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "59951e13c56fd4d12c320c1ece2a6040aed793be",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/59951e13c56fd4d12c320c1ece2a6040aed793be",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/59951e13c56fd4d12c320c1ece2a6040aed793be"
+      }
+    ]
+  },
+  {
+    "sha": "59951e13c56fd4d12c320c1ece2a6040aed793be",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-22T02:04:31Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-22T02:04:31Z"
+      },
+      "message": "Added a command to generate csvs for building recommendations",
+      "tree": {
+        "sha": "fde0ce5d86cc4b2b5c82bc664182dd7810e244b4",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/fde0ce5d86cc4b2b5c82bc664182dd7810e244b4"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/59951e13c56fd4d12c320c1ece2a6040aed793be",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/59951e13c56fd4d12c320c1ece2a6040aed793be",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/59951e13c56fd4d12c320c1ece2a6040aed793be",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/59951e13c56fd4d12c320c1ece2a6040aed793be/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "14b5fc814d1b774c496f422375f5e15ce6de7cc4",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/14b5fc814d1b774c496f422375f5e15ce6de7cc4",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/14b5fc814d1b774c496f422375f5e15ce6de7cc4"
+      }
+    ]
+  },
+  {
+    "sha": "14b5fc814d1b774c496f422375f5e15ce6de7cc4",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T04:05:11Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T04:05:22Z"
+      },
+      "message": "Fixed the styling of the popup signup form on the review page for the small screen.",
+      "tree": {
+        "sha": "b219ff11bb506e8853693e611da72fd5350a90a8",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/b219ff11bb506e8853693e611da72fd5350a90a8"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/14b5fc814d1b774c496f422375f5e15ce6de7cc4",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/14b5fc814d1b774c496f422375f5e15ce6de7cc4",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/14b5fc814d1b774c496f422375f5e15ce6de7cc4",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/14b5fc814d1b774c496f422375f5e15ce6de7cc4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b06366f37ebad76703efa47a42c7fc3515eda9ab",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/b06366f37ebad76703efa47a42c7fc3515eda9ab",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/b06366f37ebad76703efa47a42c7fc3515eda9ab"
+      }
+    ]
+  },
+  {
+    "sha": "b06366f37ebad76703efa47a42c7fc3515eda9ab",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T01:18:43Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T03:00:13Z"
+      },
+      "message": "Added a test for the new review signup controller flow",
+      "tree": {
+        "sha": "c64240cff9cb3842eb2c4773eabada6cc4f882f8",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/c64240cff9cb3842eb2c4773eabada6cc4f882f8"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/b06366f37ebad76703efa47a42c7fc3515eda9ab",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/b06366f37ebad76703efa47a42c7fc3515eda9ab",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/b06366f37ebad76703efa47a42c7fc3515eda9ab",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/b06366f37ebad76703efa47a42c7fc3515eda9ab/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e950ac4e93c053f5cb6d0712337e7c163765b054",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e950ac4e93c053f5cb6d0712337e7c163765b054",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/e950ac4e93c053f5cb6d0712337e7c163765b054"
+      }
+    ]
+  },
+  {
+    "sha": "e950ac4e93c053f5cb6d0712337e7c163765b054",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-15T23:54:18Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T03:00:13Z"
+      },
+      "message": "Reviews are created if you decide to login instead of signup in the review first signup later flow",
+      "tree": {
+        "sha": "654644cced886a46047e34aa2c2a6d0f8907f064",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/654644cced886a46047e34aa2c2a6d0f8907f064"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/e950ac4e93c053f5cb6d0712337e7c163765b054",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e950ac4e93c053f5cb6d0712337e7c163765b054",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/e950ac4e93c053f5cb6d0712337e7c163765b054",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/e950ac4e93c053f5cb6d0712337e7c163765b054/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d46b99cf62d6e1477b9ad07a3c917932f0d4d284",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d46b99cf62d6e1477b9ad07a3c917932f0d4d284",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/d46b99cf62d6e1477b9ad07a3c917932f0d4d284"
+      }
+    ]
+  },
+  {
+    "sha": "d46b99cf62d6e1477b9ad07a3c917932f0d4d284",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-15T03:24:58Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T03:00:13Z"
+      },
+      "message": "Added a new create review flow - users first write and review and then signup later",
+      "tree": {
+        "sha": "a8a28ab9fcd7bb9e882db2c0ae2ba765f9119bad",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/a8a28ab9fcd7bb9e882db2c0ae2ba765f9119bad"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/d46b99cf62d6e1477b9ad07a3c917932f0d4d284",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d46b99cf62d6e1477b9ad07a3c917932f0d4d284",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/d46b99cf62d6e1477b9ad07a3c917932f0d4d284",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/d46b99cf62d6e1477b9ad07a3c917932f0d4d284/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "403b6659eb673c8e021c1fe117d769fcea1e3f28",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/403b6659eb673c8e021c1fe117d769fcea1e3f28",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/403b6659eb673c8e021c1fe117d769fcea1e3f28"
+      }
+    ]
+  },
+  {
+    "sha": "403b6659eb673c8e021c1fe117d769fcea1e3f28",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T01:35:57Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-16T01:35:57Z"
+      },
+      "message": "Wrong default signup type",
+      "tree": {
+        "sha": "b0c763acf1b9560fe89ffd178b2160ff79a5f369",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/b0c763acf1b9560fe89ffd178b2160ff79a5f369"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/403b6659eb673c8e021c1fe117d769fcea1e3f28",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/403b6659eb673c8e021c1fe117d769fcea1e3f28",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/403b6659eb673c8e021c1fe117d769fcea1e3f28",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/403b6659eb673c8e021c1fe117d769fcea1e3f28/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "a0f1aa508c93def19eb0992aaeea5b1ff9314496",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/a0f1aa508c93def19eb0992aaeea5b1ff9314496",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/a0f1aa508c93def19eb0992aaeea5b1ff9314496"
+      }
+    ]
+  },
+  {
+    "sha": "a0f1aa508c93def19eb0992aaeea5b1ff9314496",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-14T01:45:28Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-14T01:45:28Z"
+      },
+      "message": "Added a scraper for iversity",
+      "tree": {
+        "sha": "712da51a2bba4b5992e3e7c8f66d241d7b8e073d",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/712da51a2bba4b5992e3e7c8f66d241d7b8e073d"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/a0f1aa508c93def19eb0992aaeea5b1ff9314496",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/a0f1aa508c93def19eb0992aaeea5b1ff9314496",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/a0f1aa508c93def19eb0992aaeea5b1ff9314496",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/a0f1aa508c93def19eb0992aaeea5b1ff9314496/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "837390ca818e6f1ee733cea971fd169dca45c262",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/837390ca818e6f1ee733cea971fd169dca45c262",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/837390ca818e6f1ee733cea971fd169dca45c262"
+      }
+    ]
+  },
+  {
+    "sha": "837390ca818e6f1ee733cea971fd169dca45c262",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-14T00:25:29Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-14T00:25:29Z"
+      },
+      "message": "Added a FutureLearn scraper",
+      "tree": {
+        "sha": "cc81fc597abe1d89d506a8624a948d86d7670ba9",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/cc81fc597abe1d89d506a8624a948d86d7670ba9"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/837390ca818e6f1ee733cea971fd169dca45c262",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/837390ca818e6f1ee733cea971fd169dca45c262",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/837390ca818e6f1ee733cea971fd169dca45c262",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/837390ca818e6f1ee733cea971fd169dca45c262/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "66709514a9e2f5af83a41c955d7b135e9f7ecdb9",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/66709514a9e2f5af83a41c955d7b135e9f7ecdb9",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/66709514a9e2f5af83a41c955d7b135e9f7ecdb9"
+      }
+    ]
+  },
+  {
+    "sha": "66709514a9e2f5af83a41c955d7b135e9f7ecdb9",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-13T21:10:38Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-13T21:10:38Z"
+      },
+      "message": "My Courses page would turn out be blank if a course without an offering was added.\n\nFixed the issue.",
+      "tree": {
+        "sha": "9b92bdfe36fc34b504fbeefbddcebe3daf57a989",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/9b92bdfe36fc34b504fbeefbddcebe3daf57a989"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/66709514a9e2f5af83a41c955d7b135e9f7ecdb9",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/66709514a9e2f5af83a41c955d7b135e9f7ecdb9",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/66709514a9e2f5af83a41c955d7b135e9f7ecdb9",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/66709514a9e2f5af83a41c955d7b135e9f7ecdb9/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4edf6a74b76d91a855cfdf2a67968f123749facd",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/4edf6a74b76d91a855cfdf2a67968f123749facd",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/4edf6a74b76d91a855cfdf2a67968f123749facd"
+      }
+    ]
+  },
+  {
+    "sha": "4edf6a74b76d91a855cfdf2a67968f123749facd",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-12T23:52:29Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-12T23:52:29Z"
+      },
+      "message": "After login now you are redirected to the page you were on before.",
+      "tree": {
+        "sha": "4989c9a353e85abb2161c06ed60f61a412e9504a",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/4989c9a353e85abb2161c06ed60f61a412e9504a"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/4edf6a74b76d91a855cfdf2a67968f123749facd",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/4edf6a74b76d91a855cfdf2a67968f123749facd",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/4edf6a74b76d91a855cfdf2a67968f123749facd",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/4edf6a74b76d91a855cfdf2a67968f123749facd/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "5e602684b120350e7779e9a2c271eb4179e6dda0",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/5e602684b120350e7779e9a2c271eb4179e6dda0",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/5e602684b120350e7779e9a2c271eb4179e6dda0"
+      }
+    ]
+  },
+  {
+    "sha": "5e602684b120350e7779e9a2c271eb4179e6dda0",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-12T20:23:45Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-12T20:23:45Z"
+      },
+      "message": "Disabled uservoice for screens smaller than 768px",
+      "tree": {
+        "sha": "91ca47b2cc04af2cc46bb3bad6380a8cfe2a50cd",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/91ca47b2cc04af2cc46bb3bad6380a8cfe2a50cd"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/5e602684b120350e7779e9a2c271eb4179e6dda0",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/5e602684b120350e7779e9a2c271eb4179e6dda0",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/5e602684b120350e7779e9a2c271eb4179e6dda0",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/5e602684b120350e7779e9a2c271eb4179e6dda0/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "72f590dd8d1c6f77f3e5525d086fa495ff752ac6",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/72f590dd8d1c6f77f3e5525d086fa495ff752ac6",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/72f590dd8d1c6f77f3e5525d086fa495ff752ac6"
+      }
+    ]
+  },
+  {
+    "sha": "72f590dd8d1c6f77f3e5525d086fa495ff752ac6",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-12T02:03:29Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-12T02:03:29Z"
+      },
+      "message": "Added a news section to the course page",
+      "tree": {
+        "sha": "7d5e1d22b03fd3b5c0a2bced240da90784754ba6",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/7d5e1d22b03fd3b5c0a2bced240da90784754ba6"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/72f590dd8d1c6f77f3e5525d086fa495ff752ac6",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/72f590dd8d1c6f77f3e5525d086fa495ff752ac6",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/72f590dd8d1c6f77f3e5525d086fa495ff752ac6",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/72f590dd8d1c6f77f3e5525d086fa495ff752ac6/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/48c9871c84c8359beb4a5fefc8f72b7138f5e582"
+      }
+    ]
+  },
+  {
+    "sha": "fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-01-09T17:39:30Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-11T07:52:51Z"
+      },
+      "message": "more update",
+      "tree": {
+        "sha": "f0bae6b1687c22ad7b61e80bb2cd9c74b540733b",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/f0bae6b1687c22ad7b61e80bb2cd9c74b540733b"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/fb767fbb0a6e3971a2e4dde6d605553ac8b7dd3e/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "668565ad683ca45266222f0bec3b12d110a2a8ea",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/668565ad683ca45266222f0bec3b12d110a2a8ea",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/668565ad683ca45266222f0bec3b12d110a2a8ea"
+      }
+    ]
+  },
+  {
+    "sha": "668565ad683ca45266222f0bec3b12d110a2a8ea",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-01-06T05:58:33Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-11T07:52:18Z"
+      },
+      "message": "Updted to the latest branch",
+      "tree": {
+        "sha": "61470455c3d30b5443abd9c283ae3bb3e3dc9d0f",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/61470455c3d30b5443abd9c283ae3bb3e3dc9d0f"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/668565ad683ca45266222f0bec3b12d110a2a8ea",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/668565ad683ca45266222f0bec3b12d110a2a8ea",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/668565ad683ca45266222f0bec3b12d110a2a8ea",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/668565ad683ca45266222f0bec3b12d110a2a8ea/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1c628172935fb854a17faf98bdc514db3ea5dbe2",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/1c628172935fb854a17faf98bdc514db3ea5dbe2",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/1c628172935fb854a17faf98bdc514db3ea5dbe2"
+      }
+    ]
+  },
+  {
+    "sha": "1c628172935fb854a17faf98bdc514db3ea5dbe2",
+    "commit": {
+      "author": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2013-12-05T05:25:05Z"
+      },
+      "committer": {
+        "name": "Dhawal Shah",
+        "email": "dhawalhshah@gmail.com",
+        "date": "2014-02-11T07:51:14Z"
+      },
+      "message": "Changes made for TeachThought MOOC Report",
+      "tree": {
+        "sha": "3ed7756664cb5c49cea8fc31938a1115c58519d5",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/3ed7756664cb5c49cea8fc31938a1115c58519d5"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/1c628172935fb854a17faf98bdc514db3ea5dbe2",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/1c628172935fb854a17faf98bdc514db3ea5dbe2",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/1c628172935fb854a17faf98bdc514db3ea5dbe2",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/1c628172935fb854a17faf98bdc514db3ea5dbe2/comments",
+    "author": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dhawalhshah",
+      "id": 238814,
+      "avatar_url": "https://avatars.githubusercontent.com/u/238814?",
+      "gravatar_id": "8da0469b4a423dcbe1e77f6f6a718cd4",
+      "url": "https://api.github.com/users/dhawalhshah",
+      "html_url": "https://github.com/dhawalhshah",
+      "followers_url": "https://api.github.com/users/dhawalhshah/followers",
+      "following_url": "https://api.github.com/users/dhawalhshah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhawalhshah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhawalhshah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhawalhshah/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhawalhshah/orgs",
+      "repos_url": "https://api.github.com/users/dhawalhshah/repos",
+      "events_url": "https://api.github.com/users/dhawalhshah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhawalhshah/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/48c9871c84c8359beb4a5fefc8f72b7138f5e582"
+      }
+    ]
+  },
+  {
+    "sha": "48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+    "commit": {
+      "author": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-11T02:39:21Z"
+      },
+      "committer": {
+        "name": "Dhawal",
+        "email": "dhawal@igneel.(none)",
+        "date": "2014-02-11T02:39:21Z"
+      },
+      "message": "Subscribe to newsletters during the fb signup flow",
+      "tree": {
+        "sha": "8a6dc6e879d0587bc88680ce1a8cae16f4f8dcc0",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/git/trees/8a6dc6e879d0587bc88680ce1a8cae16f4f8dcc0"
+      },
+      "url": "https://api.github.com/repos/dhawalhshah/class-central/git/commits/48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+    "html_url": "https://github.com/dhawalhshah/class-central/commit/48c9871c84c8359beb4a5fefc8f72b7138f5e582",
+    "comments_url": "https://api.github.com/repos/dhawalhshah/class-central/commits/48c9871c84c8359beb4a5fefc8f72b7138f5e582/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1b2fc7cc47fd1d42e6e7ab7a57684e5f7f8215ab",
+        "url": "https://api.github.com/repos/dhawalhshah/class-central/commits/1b2fc7cc47fd1d42e6e7ab7a57684e5f7f8215ab",
+        "html_url": "https://github.com/dhawalhshah/class-central/commit/1b2fc7cc47fd1d42e6e7ab7a57684e5f7f8215ab"
+      }
+    ]
+  }
+]

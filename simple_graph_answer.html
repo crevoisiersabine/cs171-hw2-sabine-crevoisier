@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+ <html>
+ <style>
+
+  .link {
+    stroke: gray;
+    stroke-width: 1.5px;
+  }
+
+  .node {
+    fill: #66CC66;
+    stroke: #000;
+    stroke-width: 1px;
+  }
+
+ </style>
+ <body>
+ <script src="http://d3js.org/d3.v3.min.js"></script>
+ <script>
+	 
+	 var width = 900,
+	     height = 700;
+	 
+	 var svg = d3.select("body").append("svg")
+	             .attr("width", width)
+	             .attr("height", height);
+	 
+	 var link = svg.selectAll(".link"),
+    	 node = svg.selectAll(".node");
+
+	 var graph = {nodes:[], links:[]};
+
+	 d3.json("master.json", function(error, data1){
+	 	d3.json("Yet_another_branch.json", function(error, data2){
+		 	//Load first dataset
+		 	data1.forEach(function(d, i){
+		 		//Add the nodes with all metadata of a commit
+		 		graph.nodes.push([d, 1]);
+		 	})
+		 	//Load second dataset
+		 	data2.forEach(function(d, i){
+		 		console.log(d);
+		 		// if(d.sha == "022647ff9bf16d8a9088f322694ce5e633969650"){console.log("It's there!!")};
+		 		var test = false;
+		 		graph.nodes.forEach(function(e, j){
+		 			if(e[0].sha == d.sha){
+		 				test = true;
+		 			}
+		 		})
+		 		if(test == false){
+		 			//Add the nodes with all metadata of a commit if they didn't appear in the master branch already
+		 			graph.nodes.push([d, 2]);
+		 		}
+		 	})
+
+		 	//Add coordinates to the commits
+	 		graph.nodes.forEach(function(d, i) {
+		      d.y = height/2 + 100*d[1];
+		      d.x = (Number(new Date(d[0].commit.author.date)) - 1397527980000)/15000000 + width/1.1;
+		    })
+
+			//Add the links
+		 	graph.nodes.map(function(d, i){
+		 		graph.nodes.map(function(e, j){
+		 			e[0].parents.forEach(function(f, k){
+				 		if(d[0].sha == f.sha){
+			       			graph.links.push({"source": j, "target": i});
+				 		}
+				 	})
+				})
+	 		})
+		 	
+		 	//Use a force layout to connect nodes with links
+		 	var force = d3.layout.force();
+		    force.nodes(graph.nodes)
+		      .links(graph.links)
+		      .start();
+
+		    //Append g elements to each node
+		 	node = node.data(graph.nodes)
+			  .enter().append("g").attr("class", "node")
+			  .attr("transform", function(d) { 
+	      		return "translate("+d.x+","+d.y+")";
+	      	  });
+
+			//Append line elements to links
+	      	link = link.data(graph.links)
+			  .enter().append("line")
+			  .attr("class", "link")
+			  .attr("x1", function(d) { return d.target.x; })
+			  .attr("y1", function(d) { return d.target.y; })
+			  .attr("x2", function(d) { return d.source.x; })
+		      .attr("y2", function(d) { return d.source.y; });
+
+		    //Append circle elements to nodes
+			node.append("circle")
+			  .attr("r", 5)
+			
+			// console.log(graph);
+
+		})
+	 }) //end of d3.json
+
+</script>
+</body>
+</html>
