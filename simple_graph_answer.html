@@ -18,9 +18,24 @@
  <script src="http://d3js.org/d3.v3.min.js"></script>
  <script>
 	 
+	 d3.select("body").append("button").text("change scale").on({
+	    "click": function() {
+	      return changeScale();
+	    }
+	  });
+
+	 var isIndexScale = false;
+
 	 var width = 900,
 	     height = 700;
-	 
+
+	 var margin = {
+	 	top: 10,
+	 	bottom: 10,
+	 	left: 10,
+	 	right: 10
+	 };
+
 	 var svg = d3.select("body").append("svg")
 	             .attr("width", width)
 	             .attr("height", height);
@@ -29,6 +44,9 @@
     	 node = svg.selectAll(".node");
 
 	 var graph = {nodes:[], links:[]};
+
+	 var minDate = Number(Date.now()),
+	 	 maxDate = 0;
 
 	 d3.json("master.json", function(error, data1){
 	 	d3.json("Yet_another_branch.json", function(error, data2){
@@ -51,10 +69,32 @@
 		 		}
 		 	})
 
+		 	//Evaluate min and max dates
+		 	graph.nodes.forEach(function(d, i) {
+		 		if(Number(new Date(d[0].commit.author.date)) > maxDate){
+	 	 			maxDate = Number(new Date(d[0].commit.author.date));
+	 	 		}
+	 	 		if(Number(new Date(d[0].commit.author.date)) < minDate){
+	 	 			minDate = Number(new Date(d[0].commit.author.date));
+	 	 		}
+	 	 	})
+
+		 	//This piece of code sorts the nodes by date of commit
+		 	graph.nodes.sort(function(a,b){
+		 		return Number(new Date(a[0].commit.author.date)) - Number(new Date(b[0].commit.author.date))
+		 	})
+
+	 	 	//Add an x-scale based on commit dates
+	 	 	var scaletime = d3.scale.linear().domain([minDate, maxDate]).range([margin.left, width - margin.right]);
+	 	 	//Add an x-scale based on index (equi-distant)
+	 	 	var scaleindex = d3.scale.linear().domain([0, graph.nodes.length]).range([margin.left, width - margin.right]);
+
 		 	//Add coordinates to the commits
 	 		graph.nodes.forEach(function(d, i) {
-		      d.y = height/2 + 100*d[1];
-		      d.x = (Number(new Date(d[0].commit.author.date)) - 1397527980000)/15000000 + width/1.1;
+		      d.y = height/5 + 100*d[1];
+		      // d.x = scaletime(Number(new Date(d[0].commit.author.date)));
+		      //Start with indexed scale
+		      d.x = scaleindex(i);
 		    })
 
 			//Add the links
@@ -74,27 +114,61 @@
 		      .links(graph.links)
 		      .start();
 
-		    //Append g elements to each node
-		 	node = node.data(graph.nodes)
-			  .enter().append("g").attr("class", "node")
-			  .attr("transform", function(d) { 
-	      		return "translate("+d.x+","+d.y+")";
-	      	  });
+		    //Create the graph to start with
+		    	node = node.data(graph.nodes)
+				  .enter().append("g").attr("class", "node")
+				  .attr("transform", function(d) { 
+		      		return "translate("+d.x+","+d.y+")";
+		      	  });
 
-			//Append line elements to links
-	      	link = link.data(graph.links)
-			  .enter().append("line")
-			  .attr("class", "link")
-			  .attr("x1", function(d) { return d.target.x; })
-			  .attr("y1", function(d) { return d.target.y; })
-			  .attr("x2", function(d) { return d.source.x; })
-		      .attr("y2", function(d) { return d.source.y; });
+				//Append line elements to links
+		      	link = link.data(graph.links)
+				  .enter().append("line")
+				  .attr("class", "link")
+				  .attr("x1", function(d) { return d.target.x; })
+				  .attr("y1", function(d) { return d.target.y; })
+				  .attr("x2", function(d) { return d.source.x; })
+			      .attr("y2", function(d) { return d.source.y; });
 
-		    //Append circle elements to nodes
-			node.append("circle")
-			  .attr("r", 5);
+			    //Append circle elements to nodes
+				node.append("circle")
+				  .attr("r", 5);
 
-		})
+		    function updateFunc() {
+
+			 	d3.selectAll(".node")
+				  .attr("transform", function(d) { 
+		      		return "translate("+d.x+","+d.y+")";
+		      	  });
+
+		      	d3.selectAll(".link")
+				  .attr("x1", function(d) { return d.target.x; })
+				  .attr("y1", function(d) { return d.target.y; })
+				  .attr("x2", function(d) { return d.source.x; })
+			      .attr("y2", function(d) { return d.source.y; });
+			};
+
+			changeScale = function() {
+			    if (isIndexScale) {
+			      scaleX = d3.scale.ordinal().domain([0, graph.nodes.length]).range([margin.left, width - margin.right]);
+			      isIndexScale = false;
+			      graph.nodes.forEach(function(d, i) {
+			      	d.x = scaleindex(i);
+			      	d.y = height/5 + 100*d[1];
+			      })
+			    } else {
+			      scaleX = d3.scale.linear().domain([minDate, maxDate]).range([margin.left, width - margin.right]);
+			      isIndexScale = true;
+			      graph.nodes.forEach(function(d, i) {
+			      	d.x = scaletime(Number(new Date(d[0].commit.author.date)));
+			      	d.y = height/5 + 100*d[1];
+			      })
+			    }
+			    //Update the function
+			    updateFunc();
+			  };
+
+		}) //end of first json read
 	 }) //end of d3.json
 
 </script>
