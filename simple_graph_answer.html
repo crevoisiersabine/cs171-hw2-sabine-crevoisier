@@ -146,7 +146,7 @@
 		 		graph.nodes.map(function(e, j){
 		 			e[0].parents.forEach(function(f, k){
 				 		if(d[0].sha == f.sha){
-			       			graph.links.push({"source": j, "target": i});
+			       			graph.links.push({"source": i, "target": j});
 				 		}
 				 	})
 				})
@@ -157,6 +157,11 @@
 		    force.nodes(graph.nodes)
 		      .links(graph.links)
 		      .start();
+
+		    var line = d3.svg.line()
+  				.x(function(d) { return d.x; })
+  				.y(function(d) { return d.y; });
+
 
 		    //Create the graph to start with
 		    	node = node.data(graph.nodes)
@@ -170,16 +175,27 @@
 
 				//Append line elements to links
 		      	link = link.data(graph.links)
-				  .enter().append("line")
+				  .enter().append("path")
 				  .attr("class", "link")
 				  // .style("stroke", function(d){
 				  // 	return colourScale(d.source[1]);
 				  // })
 				  .attr("marker-end", "url(#end)")
-				  .attr("x1", function(d) { return d.target.x; })
-				  .attr("y1", function(d) { return d.target.y; })
-				  .attr("x2", function(d) { return d.source.x; })
-			      .attr("y2", function(d) { return d.source.y; });
+				  .attr("d", function(d) {
+				    return line([
+				      {
+				        x: d.source.x,
+				        y: d.source.y
+				      }, {
+				        x: d.source.x,
+				        y: d.target.y
+				      }, {
+				        x: d.target.x,
+				        y: d.target.y
+				      }
+				    ]);
+				  })
+				  .attr("fill", "none");
 
 			    //Append circle elements to nodes
 				node.append("circle")
@@ -193,10 +209,21 @@
 		      	  });
 
 		      	d3.selectAll(".link")
-				  .attr("x1", function(d) { return d.target.x; })
-				  .attr("y1", function(d) { return d.target.y; })
-				  .attr("x2", function(d) { return d.source.x; })
-			      .attr("y2", function(d) { return d.source.y; });
+				  .attr("d", function(d) {
+				    return line([
+				      {
+				        x: d.source.x,
+				        y: d.source.y
+				      }, {
+				        x: d.source.x,
+				        y: d.target.y
+				      }, {
+				        x: d.target.x,
+				        y: d.target.y
+				      }
+				    ]);
+				  })
+				  .attr("fill", "none");
 			};
 
 			changeScale = function() {
