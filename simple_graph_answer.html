@@ -5,7 +5,7 @@
 /*Styling for tooltip*/
 #tooltip {
 	position: absolute;
-	width: 200px;
+	width: auto;
 	height: auto;
 	padding: 10px;
 	background-color: white;
@@ -39,17 +39,29 @@
 
 <!-- Tooltip -->
 	<div id="tooltip" class="hidden">
-		<p><span id="value">100</span></p>
-	</div>
+        <p><strong>Author: </strong><span id="author"></span></p>
+        <p><strong>Date: </strong><span id="date"></span></p>
+        <p><strong>Commit message: </strong><span id="message"></span></p>
+        <p><strong>Branch: </strong><span id="branch"></span></p>
+        <p><strong>SHA: </strong><span id="sha"></span></p>
+        <p><strong>Parent SHA: </strong><span id="parent"></span></p>
+    </div>
 
  <script src="http://d3js.org/d3.v3.min.js"></script>
  <script>
+
+ /*Currently this code is encoded so that different branches are a different colour, according to a linear scale from red to blue and 
+ different contributors are plotted at a different y coordinate. It would be possible to do the opposite and encode the authors by colour 
+ and instead show the different branches at different y coordinate locations. */
 	 
 	 d3.select("body").append("button").text("change scale").on({
 	    "click": function() {
 	      return changeScale();
 	    }
 	  });
+
+	 //Root URL for the repo that we want to query
+	 var rootUrl = "https://api.github.com/repos/dhawalhshah/class-central/";
 
 	 var isIndexScale = false;
 
@@ -75,9 +87,6 @@
 	 var minDate = Number(Date.now()),
 	 	 maxDate = 0;
 
-	 var colourScale = d3.scale.ordinal()
-	 					.domain([1, 2]).range(["red", "blue"]);
-
 	 // build the arrow.
 	svg.append("svg:defs").selectAll("marker")
 		.data(["end"])      // Different link/path types can be defined here
@@ -92,178 +101,266 @@
 		.append("svg:path")
 		.attr("d", "M0,-5L10,0L0,5");
 
-	 d3.json("master.json", function(error, data1){
-	 	d3.json("Yet_another_branch.json", function(error, data2){
-		 	//Load first dataset
-		 	data1.forEach(function(d, i){
-		 		//Add the nodes with all metadata of a commit
-		 		graph.nodes.push([d, 1]);
-		 	})
-		 	//Load second dataset
-		 	data2.forEach(function(d, i){
-		 		var test = false;
-		 		graph.nodes.forEach(function(e, j){
-		 			if(e[0].sha == d.sha){
-		 				test = true;
-		 			}
-		 		})
-		 		if(test == false){
-		 			//Add the nodes with all metadata of a commit if they didn't appear in the master branch already
-		 			graph.nodes.push([d, 2]);
-		 		}
-		 	})
+	//Function to make an HTTP request
+	getData = function(url) {
+	  var data, linkHeader, links, request;
+	  // console.log("Getting data from " + url);
+	  request = new XMLHttpRequest();
+	  request.open('GET', url, false);
+	  request.send();
+	  if (request.status === 200) {
+	    data = JSON.parse(request.responseText);
+	  } else {
+	    throw new Error("" + request.status + " " + request.statusText);
+	  }
+	  linkHeader = request.getResponseHeader("Link");
+	  links = parseLinkHeader(linkHeader);
+	  if ("next" in links) {
+	    data = data.concat(getData(links["next"]));
+	  }
+	  return data;
+	};
 
-		 	//Evaluate min and max dates
-		 	graph.nodes.forEach(function(d, i) {
-		 		if(Number(new Date(d[0].commit.author.date)) > maxDate){
-	 	 			maxDate = Number(new Date(d[0].commit.author.date));
-	 	 		}
-	 	 		if(Number(new Date(d[0].commit.author.date)) < minDate){
-	 	 			minDate = Number(new Date(d[0].commit.author.date));
-	 	 		}
-	 	 	})
+	parseLinkHeader = function(header) {
+	  var links, rel, segments, url, value, values, _i, _len;
+	  if (header === null) {
+	    return {};
+	  }
+	  values = header.split(',');
+	  links = {};
+	  for (_i = 0, _len = values.length; _i < _len; _i++) {
+	    value = values[_i];
+	    segments = value.split(';');
+	    url = segments[0].replace(/<(.*)>/, '$1').trim();
+	    rel = segments[1].replace(/rel="(.*)"/, '$1').trim();
+	    links[rel] = url;
+	  }
+	  return links;
+	};
 
-		 	//This piece of code sorts the nodes by date of commit
-		 	graph.nodes.sort(function(a,b){
-		 		return Number(new Date(a[0].commit.author.date)) - Number(new Date(b[0].commit.author.date))
-		 	})
+	var accessToken = "4b38459e215c371cafee7499ad843daf10bb0bbc";
+	var branch_array = []
+	//Get the data about each branch that exists in that repo except the master
+	var data = getData("" + rootUrl + "branches?access_token=" + accessToken);
+	for(i = 0; i < data.length; i++){
+		branch_array.push(data[i].name);
+	}
 
-	 	 	//Add an x-scale based on commit dates
-	 	 	var scaletime = d3.scale.linear().domain([minDate, maxDate]).range([margin.left, width - margin.right]);
-	 	 	//Add an x-scale based on index (equi-distant)
-	 	 	var scaleindex = d3.scale.linear().domain([0, graph.nodes.length]).range([margin.left, width - margin.right]);
+	//Get master branch data
+	// var master = getData("" + rootUrl + "commits?sha=master&access_token=" + accessToken);
 
-		 	//Add coordinates to the commits
-	 		graph.nodes.forEach(function(d, i) {
-		      d.y = height/5 + 100*d[1];
-		      // d.x = scaletime(Number(new Date(d[0].commit.author.date)));
-		      //Start with indexed scale
-		      d.x = scaleindex(i);
-		    })
+	//Get data from all branches
+	data2 = {}
+	for (i = 0; i < branch_array.length; i++) {
+		// data2[branch_array[i]] = {};
+	  	data2[branch_array[i]] = getData("" + rootUrl + "commits?sha=" + branch_array[i] + "&per_page=100&access_token=" + accessToken);
+	  	//Add information to each node about branch and give it a level based on branch for colouring later on
+	  	for (k = 0; k < data2[branch_array[i]].length; k++) {
+	  		data2[branch_array[i]][k].level = i;
+	  		data2[branch_array[i]][k].branch = branch_array[i];
+	  	}
+	}
 
-			//Add the links
-		 	graph.nodes.map(function(d, i){
-		 		graph.nodes.map(function(e, j){
-		 			e[0].parents.forEach(function(f, k){
-				 		if(d[0].sha == f.sha){
-			       			graph.links.push({"source": i, "target": j});
-				 		}
-				 	})
-				})
-	 		})
-		 	
-		 	//Use a force layout to connect nodes with links
-		 	var force = d3.layout.force();
-		    force.nodes(graph.nodes)
-		      .links(graph.links)
-		      .start();
+	//Setting up the list of authors to use for the yscale
+	allAuthors = []
+	__indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+	for (i = 0; i < branch_array.length; i++) {
+		for (j = 0; j < data2[branch_array[i]].length; j ++){
+			author = data2[branch_array[i]][j].commit.committer.name;
+			if (__indexOf.call(allAuthors, author) < 0) {
+		        allAuthors.push(author);
+		      }
+		}
+	}
 
-		    var line = d3.svg.line()
-  				.x(function(d) { return d.x; })
-  				.y(function(d) { return d.y; });
+	var yScale = d3.scale.ordinal().domain(allAuthors).rangeRoundBands([0, height], 0.5);
+
+	//Setting up the colour scale
+	var colorMax = branch_array.length;
+	var colourScale = d3.scale.linear()
+	 		.domain([0, colorMax]).range(["red", "blue"]);
+
+	for (p = 0; p < branch_array.length; p++) {
+		//Load the master branch first
+		data2[branch_array[p]].forEach(function(d, i){
+			if(d.branch === "master"){
+				//Add the nodes with all metadata of a commit
+				graph.nodes.push([d]);
+			}
+		})
+
+		data2[branch_array[p]].forEach(function(d, i){
+			var test = false;
+			graph.nodes.forEach(function(e, j){
+				if(e[0].sha === d.sha){
+					test = true;
+				}
+			})
+			if(test === false){
+				//Add the nodes with all metadata of a commit if they didn't appear in the master branch already
+				graph.nodes.push([d]);
+			}
+		})
+	}
+
+	//Evaluate min and max dates
+	graph.nodes.forEach(function(d, i) {
+		if(Number(new Date(d[0].commit.author.date)) > maxDate){
+			maxDate = Number(new Date(d[0].commit.author.date));
+		}
+		if(Number(new Date(d[0].commit.author.date)) < minDate){
+			minDate = Number(new Date(d[0].commit.author.date));
+		}
+	})
+
+	//This piece of code sorts the nodes by date of commit
+	graph.nodes.sort(function(a,b){
+		return Number(new Date(a[0].commit.author.date)) - Number(new Date(b[0].commit.author.date))
+	})
+
+	//Add an x-scale based on commit dates
+	var scaletime = d3.scale.linear().domain([minDate, maxDate]).range([margin.left, width - margin.right]);
+	//Add an x-scale based on index (equi-distant)
+	var scaleindex = d3.scale.linear().domain([0, graph.nodes.length]).range([margin.left, width - margin.right]);
+
+	//Add coordinates to the commits
+	graph.nodes.forEach(function(d, i) {
+		d.y = yScale(d[0].commit.committer.name);
+		// d.x = scaletime(Number(new Date(d[0].commit.author.date)));
+		//Start with indexed scale
+		d.x = scaleindex(i);
+	})
+
+	//Add the links
+	graph.nodes.forEach(function(d, i){
+		graph.nodes.forEach(function(e, j){
+			e[0].parents.forEach(function(f, k){
+				if(d[0].sha === f.sha){
+					graph.links.push({"source": i, "target": j});
+				}
+			})
+		})
+	})
+					 	
+	//Use a force layout to connect nodes with links
+	var force = d3.layout.force();
+	force.nodes(graph.nodes)
+		.links(graph.links)
+		.start();
+
+	var line = d3.svg.line()
+		.x(function(d) { return d.x; })
+		.y(function(d) { return d.y; });
 
 
-		    //Create the graph to start with
-		    	node = node.data(graph.nodes)
-				  .enter().append("g").attr("class", "node")
-				  .attr("fill", function(d){
-				  	return colourScale(d[1]);
-				  })
-				  .attr("transform", function(d) { 
-		      		return "translate("+d.x+","+d.y+")";
-		      	  });
+	//Create the graph to start with
+	node = node.data(graph.nodes)
+			.enter().append("g").attr("class", "node")
+			.attr("fill", function(d){
+				return colourScale(d[0].level);
+			})
+			.attr("transform", function(d) {
+				return "translate("+d.x+","+d.y+")";
+			});
 
-				//Append line elements to links
-		      	link = link.data(graph.links)
-				  .enter().append("path")
-				  .attr("class", "link")
-				  // .style("stroke", function(d){
-				  // 	return colourScale(d.source[1]);
-				  // })
-				  .attr("marker-end", "url(#end)")
-				  .attr("d", function(d) {
-				    return line([
-				      {
-				        x: d.source.x,
-				        y: d.source.y
-				      }, {
-				        x: d.source.x,
-				        y: d.target.y
-				      }, {
-				        x: d.target.x,
-				        y: d.target.y
-				      }
-				    ]);
-				  })
-				  .attr("fill", "none");
+	//Append line elements to links
+	link = link.data(graph.links)
+			.enter().append("path")
+			.attr("class", "link")
+			// .style("stroke", function(d){
+			// 	return colourScale(d.source[1]);
+			// })
+			.attr("marker-end", "url(#end)")
+			.attr("d", function(d) {
+				return line([
+				{
+					x: d.source.x,
+					y: d.source.y
+				}, {
+					x: d.source.x,
+					y: d.target.y
+				}, {
+					x: d.target.x,
+					y: d.target.y
+				}
+				]);
+			})
+			.attr("fill", "none");
 
-			    //Append circle elements to nodes
-				node.append("circle")
-				  .attr("r", 5);
+	//Append circle elements to nodes
+	node.append("circle")
+		.attr("r", 5);
 
-		    function updateFunc() {
+	function updateFunc() {
 
-			 	d3.selectAll(".node")
-				  .attr("transform", function(d) { 
-		      		return "translate("+d.x+","+d.y+")";
-		      	  });
+		d3.selectAll(".node")
+			.attr("transform", function(d) { 
+				return "translate("+d.x+","+d.y+")";
+			});
 
-		      	d3.selectAll(".link")
-				  .attr("d", function(d) {
-				    return line([
-				      {
-				        x: d.source.x,
-				        y: d.source.y
-				      }, {
-				        x: d.source.x,
-				        y: d.target.y
-				      }, {
-				        x: d.target.x,
-				        y: d.target.y
-				      }
-				    ]);
-				  })
-				  .attr("fill", "none");
-			};
+		d3.selectAll(".link")
+			.attr("d", function(d) {
+				return line([
+				{
+					x: d.source.x,
+					y: d.source.y
+				}, {
+					x: d.source.x,
+					y: d.target.y
+				}, {
+					x: d.target.x,
+					y: d.target.y
+				}
+				]);
+			})
+			.attr("fill", "none");
+		};
 
-			changeScale = function() {
-			    if (isIndexScale) {
-			      scaleX = d3.scale.ordinal().domain([0, graph.nodes.length]).range([margin.left, width - margin.right]);
-			      isIndexScale = false;
-			      graph.nodes.forEach(function(d, i) {
-			      	d.x = scaleindex(i);
-			      	d.y = height/5 + 100*d[1];
-			      })
-			    } else {
-			      scaleX = d3.scale.linear().domain([minDate, maxDate]).range([margin.left, width - margin.right]);
-			      isIndexScale = true;
-			      graph.nodes.forEach(function(d, i) {
-			      	d.x = scaletime(Number(new Date(d[0].commit.author.date)));
-			      	d.y = height/5 + 100*d[1];
-			      })
-			    }
-			    //Update the function
-			    updateFunc();
-			  };
+	changeScale = function() {
+		if (isIndexScale) {
+			scaleX = d3.scale.ordinal().domain([0, graph.nodes.length]).range([margin.left, width - margin.right]);
+					isIndexScale = false;
+					graph.nodes.forEach(function(d, i) {
+						d.x = scaleindex(i);
+						d.y = yScale(d[0].commit.committer.name);
+					})
+		} else {
+			scaleX = d3.scale.linear().domain([minDate, maxDate]).range([margin.left, width - margin.right]);
+					isIndexScale = true;
+					graph.nodes.forEach(function(d, i) {
+						d.x = scaletime(Number(new Date(d[0].commit.author.date)));
+						d.y = yScale(d[0].commit.committer.name);
+					})
+		}
+		//Update the function
+		updateFunc();
+	};
 
-		//Tooltip
-		d3.selectAll(".node").on("mouseover", function(d){
-			//Get x, y positions of the nodes hovered over
-		  	var currentx = d3.transform(d3.select(this).attr("transform")).translate[0];
-		  	var currenty = d3.transform(d3.select(this).attr("transform")).translate[1];
-			
-			d3.select("#tooltip")
-		  		.style("left", currentx - 50 + "px")
-		  		.style("top", currenty - 70 + "px")
-		  		.select("#value")
-		  		.text(d[0].commit.author.date + " " + d[0].sha + " " + d[0].parents[0].sha);
+	//Tooltip
+	d3.selectAll(".node").on("mouseover", function(d){
+	//Get x, y positions of the nodes hovered over
+		// var currentx = d3.transform(d3.select(this).attr("transform")).translate[0];
+		// var currenty = d3.transform(d3.select(this).attr("transform")).translate[1];
 
-		  	//Make the tootip visible
-			d3.select("#tooltip").classed("hidden", false);
-		});
-			// console.log(graph.nodes);
-		}) //end of first json read
-	 }) //end of d3.json
+		d3.select("#tooltip")
+			.style("left", 150 + "px")
+			.style("top", 200 + "px");
+		d3.select("#author")
+			.text(d[0].commit.committer.name);
+		d3.select("#date")
+			.text(d[0].commit.author.date);
+		d3.select("#sha")
+			.text(d[0].sha);
+		d3.select("#parent")
+			.text(d[0].parents[0].sha);
+		d3.select("#message")
+			.text(d[0].commit.message);
+		d3.select("#branch")
+			.text(d[0].branch);
+
+		//Make the tootip visible
+		d3.select("#tooltip").classed("hidden", false);
+	});
 
 </script>
 </body>
